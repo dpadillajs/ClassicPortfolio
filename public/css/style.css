@@ -222,6 +222,10 @@ nav {
   display: block;
 }
 
+.skillCards {
+  border-radius: initial;
+}
+
 #skillsTitle {
   font-size: 35px;
   font-family: "Roboto Condensed", sans-serif;
