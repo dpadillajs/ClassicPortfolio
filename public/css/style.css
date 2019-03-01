@@ -249,7 +249,7 @@ nav {
   text-transform: uppercase;
   font-weight: lighter;
   padding: 0;
-  color: white;
+  color: rgb(220, 52, 85);
 }
 
 #skillList {
@@ -265,7 +265,7 @@ nav {
 .box {
   height: 1.2em;
   width: 93%;
-  border: 0.1em solid white;
+  border: 0.1em solid rgb(220, 52, 85);
   border-radius: 3px;
   display: inline-block;
   margin: 0.5em 0 2em;
@@ -277,42 +277,42 @@ nav {
 #one {
   height: 1em;
   width: 60%;
-  background: white;
+  background: rgb(220, 52, 85);
   display: block;
 }
 
 #two {
   height: 1em;
   width: 90%;
-  background: white;
+  background: rgb(220, 52, 85);
   display: block;
 }
 
 #three {
   height: 1em;
   width: 50%;
-  background: white;
+  background: rgb(220, 52, 85);
   display: block;
 }
 
 #four {
   height: 1em;
   width: 90%;
-  background: white;
+  background: rgb(220, 52, 85);
   display: block;
 }
 
 #five {
   height: 1em;
   width: 92%;
-  background: white;
+  background: rgb(220, 52, 85);
   display: block;
 }
 
 #six {
   height: 1em;
   width: 85%;
-  background: white;
+  background: rgb(220, 52, 85);
   display: block;
 }
 
@@ -327,6 +327,35 @@ nav {
   animation: grow 1.4s 0.3s cubic-bezier(0.39, 0.07, 0.16, 0.97);
 }
 
+#headingOne,
+#headingTwo {
+  background: rgb(55, 55, 55);
+}
+
+.skillCategories {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 5px;
+}
+
+.skillCategories:hover {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.skillCategories:focus {
+  text-decoration: none;
+}
+
+.skills-span-SIDE {
+  color: rgb(220, 52, 85);
+  font-weight: 900;
+}
+
 /* Keyframe */
 
 @keyframes grow {
@@ -337,6 +366,7 @@ nav {
     transform: 100%;
   }
 }
+
 /* 
 .parent-card {
   width: 100%;
