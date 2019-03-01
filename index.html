@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meet Developer David</title>
+
+    <!-- Bootstrap 4 CSS CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font CDN Link -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:300,700|Roboto:300,400,500"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 5 CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="navbar-brand">David Padilla</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMeContainer">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a
+              class="nav-link github-link"
+              style="padding-bottom: 4px;"
+              href="#"
+              ><i class="social-icons fab fa-github"></i
+            ></a>
+            <a class="nav-link" style="padding-bottom: 4px;" href="#"
+              ><i class="social-icons fab fa-instagram"></i
+            ></a>
+            <a class="nav-link" style="padding-bottom: 4px;" href="#"
+              ><i class="social-icons fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid p-0">
+      <div
+        class="container-fluid m-0 p-0"
+        style="min-height: 550px;
+      "
+      >
+        <div class="videoTron">
+          <video autoplay muted loop id="videoTron">
+            <source src="public/vid/Programming.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div id="textTron">
+          <h1 class="display-4">DAVID <span id="lastName">PADILLA</span></h1>
+          <p class="lead" id="jobRoleLogo">
+            Full Stack Web Developer
+          </p>
+          <a id="arrow-styling" href="#aboutMeContainer"
+            ><i class="fas fa-angle-down"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="aboutMeContainer">
+      <div class="row">
+        <div class="col text-center">
+          <div class="card-body">
+            <h5 class="card-title mb-5" id="aboutMeTitle">
+              <span id="aboutMeBorder"
+                >ABOUT <span id="aboutMeSpan">ME</span></span
+              >
+            </h5>
+            <p class="card-text" id="aboutMeText">
+              In my most recent role at Fidelity Investments, I had the
+              opportunity to educate thousands of IBM employees about their
+              health insurance amongst many other job-related benefits. Through
+              casual conversation about their roles and programming in general,
+              I was motivated to give pursuing a career in computer programming
+              another shot, but like before I didn't know where to start. I
+              eventually heard about coding bootcamps taking place at UNC Chapel
+              Hill and how others had found success through hard work and time
+              commitment.
+              <br /><br />
+              Fast-forward to now, I am a Full Stack Web Developer with a strong
+              foundation of skills seeking a team-oriented environment where I
+              can grow, solve new problems, and ensure your projects meets
+              today's standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm mb-2">
+          <div class="card aboutMeCards mt-4">
+            <p class="card-img-top text-center" alt="Card image cap">
+              <i class="aboutMeIcons far fa-eye "></i>
+            </p>
+            <div class="card-body">
+              <h5 class="card-title aboutMeCardTitle text-center">
+                UX DESIGNER
+              </h5>
+              <p class="card-text aboutMeCardText mt-3 text-center">
+                Capable of following mockups, ensuring mobile responsiveness
+                across all devices, and improving accessibility for the everyday
+                user.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm mb-2">
+          <div class="card aboutMeCards mt-4" id="highlightSkill">
+            <p class="card-img-top text-center" alt="Card image cap">
+              <i class="aboutMeIcons fab fa-stack-overflow highlightIcon"></i>
+            </p>
+            <div class="card-body">
+              <h5
+                class="card-title aboutMeCardTitle hightlightTitle text-center"
+              >
+                RESEARCHER
+              </h5>
+              <p class="card-text aboutMeCardText mt-3 text-center">
+                Stack Overflow is my #1 resource on every project. In addition,
+                I actively educate myself on new skills and relearn tough
+                concepts through TeamTreehouse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm mb-2">
+          <div class="card aboutMeCards mt-4">
+            <p class="card-img-top text-center" alt="Card image cap">
+              <i class="aboutMeIcons fas fa-server"></i>
+            </p>
+            <div class="card-body">
+              <h5 class="card-title aboutMeCardTitle text-center">
+                SERVER SIDE SCRIPTING
+              </h5>
+              <p class="card-text aboutMeCardText mt-3 text-center">
+                Experienced in using databases, route handling, middleware, npm
+                packages, and adhering to the MVC Architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5 skills-bg">
+      <div class="row">
+        <div class="col-12">
+          <div id="skills">
+            <h5 id="skillsTitle" class="mb-5">
+              <span id="skillsBorder"
+                >DEVELOPMENT <span id="skillsSpan">SKILLS</span></span
+              >
+            </h5>
+            <ul id="skillList">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        FRONT END TECHNOLOGIES
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <li class="skill-list-item">HTML & CSS</li>
+                      <div class="box">
+                        <div id="one"></div>
+                      </div>
+                      <li class="skill-list-item">Bootstrap</li>
+                      <div class="box">
+                        <div id="two"></div>
+                      </div>
+                      <li class="skill-list-item">JavaScript</li>
+                      <div class="box">
+                        <div id="three"></div>
+                      </div>
+                      <li class="skill-list-item">jQuery</li>
+                      <div class="box">
+                        <div id="four"></div>
+                      </div>
+                      <li class="skill-list-item">Handlebars</li>
+                      <div class="box">
+                        <div id="five"></div>
+                      </div>
+                      <li class="skill-list-item">React</li>
+                      <div class="box">
+                        <div id="six"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        BACK END TECHNOLOGIES
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <li class="skill-list-item">Node</li>
+                      <div class="box">
+                        <div id="six"></div>
+                      </div>
+                      <li class="skill-list-item">Express</li>
+                      <div class="box">
+                        <div id="six"></div>
+                      </div>
+                      <li class="skill-list-item">Firebase</li>
+                      <div class="box">
+                        <div id="six"></div>
+                      </div>
+                      <li class="skill-list-item">MySQL</li>
+                      <div class="box">
+                        <div id="six"></div>
+                      </div>
+                      <li class="skill-list-item">MongoDB</li>
+                      <div class="box">
+                        <div id="six"></div>
+                      </div>
+                      <li class="skill-list-item">Object-relational Mapping</li>
+                      <div class="box">
+                        <div id="six"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 4 Javascript CDN Links -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- External Javascript Link -->
+    <script rel="javascript" src="public/js/script.js"></script>
+  </body>
+</html>
