@@ -474,3 +474,128 @@ small {
   backface-visibility: hidden;
   transform: rotateY(180deg);
 } */
+
+#cinegrub-photo {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 29%, 0 70%, 100% 95%, 100% 5%);
+  clip-path: polygon(0 29%, 0 70%, 100% 95%, 100% 5%);
+}
+
+.parallax {
+  /* The image used */
+  width: 100%;
+  height: 100%;
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image: url("../img/CineGrub2.png");
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+}
+
+.parallax2 {
+  background-image: url("../img/Schedulr2.png");
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+}
+
+.parallax3 {
+  background-image: url("../img/ThronesRPG2.png");
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+}
+
+#projectsTitle,
+#projectWorksTitle {
+  font-size: 35px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 5px;
+  text-align: right;
+  padding-right: 75px;
+}
+
+#projectsSpan,
+#projectWorksSpan {
+  color: rgb(220, 52, 85);
+  font-weight: 900;
+}
+
+#projectsBorder,
+#projectWorksBorder {
+  border-bottom: dotted 4px rgb(220, 52, 85);
+}
+
+.demoButton {
+  margin-top: 366px;
+  margin-left: 25px !important;
+  padding-left: 19px;
+  padding-top: 7px;
+  width: 150px !important;
+  display: inline-flex;
+  border-radius: 20px;
+  height: 53px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 25px;
+  background: linear-gradient(to right, rgb(203, 45, 62), rgb(239, 71, 58));
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.475);
+  border: solid 2px white;
+  cursor: pointer;
+}
+
+.demoButton2 {
+  margin-top: 366px;
+  margin-right: 25px !important;
+  padding-left: 19px;
+  padding-top: 7px;
+  width: 150px !important;
+  display: inline-flex;
+  border-radius: 20px;
+  height: 53px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 25px;
+  background: linear-gradient(to right, rgb(203, 45, 62), rgb(239, 71, 58));
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.475);
+  border: solid 2px white;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  opacity: 0.25;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.carousel-control-prev {
+  left: 0;
+  background: black;
+  opacity: 0.25;
+}
+
+.carousel-control-next {
+  right: 0;
+  background: black;
+  opacity: 0.25;
+}
