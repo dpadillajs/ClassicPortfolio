@@ -55,6 +55,11 @@ nav {
   border-color: transparent;
 }
 
+.navbar-nav .nav-link:hover,
+.social-icons:hover {
+  color: rgb(180, 180, 180) !important;
+}
+
 .social-icons {
   color: white;
   font-size: 20px;
@@ -134,7 +139,7 @@ nav {
 }
 
 #aboutMeContainer {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #aboutMeTitle {
@@ -208,6 +213,19 @@ nav {
   }
 }
 
+@media (max-width: 767px) {
+  #headingOne,
+  #headingTwo {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 484px) {
+  #skillsTitle {
+    font-size: 26px !important;
+  }
+}
+
 .skills-bg {
   background: rgb(220, 52, 85);
 }
@@ -249,14 +267,13 @@ nav {
   text-transform: uppercase;
   font-weight: lighter;
   padding: 0;
-  color: rgb(220, 52, 85);
+  color: rgb(55, 55, 55);
 }
 
 #skillList {
   padding-left: 0;
   color: #2d2d2d;
   text-align: left;
-  margin-left: 1.5em;
   list-style-type: none;
 }
 
@@ -264,7 +281,7 @@ nav {
 
 .box {
   height: 1.2em;
-  width: 93%;
+  width: 100%;
   border: 0.1em solid rgb(220, 52, 85);
   border-radius: 3px;
   display: inline-block;
@@ -276,42 +293,84 @@ nav {
 
 #one {
   height: 1em;
-  width: 60%;
+  width: 100%;
   background: rgb(220, 52, 85);
   display: block;
 }
 
 #two {
   height: 1em;
-  width: 90%;
+  width: 80%;
   background: rgb(220, 52, 85);
   display: block;
 }
 
 #three {
   height: 1em;
-  width: 50%;
+  width: 85%;
   background: rgb(220, 52, 85);
   display: block;
 }
 
 #four {
   height: 1em;
-  width: 90%;
+  width: 85%;
   background: rgb(220, 52, 85);
   display: block;
 }
 
 #five {
   height: 1em;
-  width: 92%;
+  width: 80%;
   background: rgb(220, 52, 85);
   display: block;
 }
 
 #six {
   height: 1em;
-  width: 85%;
+  width: 0%;
+  background: rgb(220, 52, 85);
+  display: block;
+}
+
+#seven {
+  height: 1em;
+  width: 70%;
+  background: rgb(220, 52, 85);
+  display: block;
+}
+
+#eight {
+  height: 1em;
+  width: 65%;
+  background: rgb(220, 52, 85);
+  display: block;
+}
+
+#nine {
+  height: 1em;
+  width: 55%;
+  background: rgb(220, 52, 85);
+  display: block;
+}
+
+#ten {
+  height: 1em;
+  width: 65%;
+  background: rgb(220, 52, 85);
+  display: block;
+}
+
+#eleven {
+  height: 1em;
+  width: 75%;
+  background: rgb(220, 52, 85);
+  display: block;
+}
+
+#twelve {
+  height: 1em;
+  width: 80%;
   background: rgb(220, 52, 85);
   display: block;
 }
@@ -323,7 +382,13 @@ nav {
 #skills:hover #three,
 #skills:hover #four,
 #skills:hover #five,
-#skills:hover #six {
+#skills:hover #six,
+#skills:hover #seven,
+#skills:hover #eight,
+#skills:hover #nine,
+#skills:hover #ten,
+#skills:hover #eleven,
+#skills:hover #twelve {
   animation: grow 1.4s 0.3s cubic-bezier(0.39, 0.07, 0.16, 0.97);
 }
 
@@ -365,6 +430,15 @@ nav {
   100% {
     transform: 100%;
   }
+}
+
+small {
+  font-size: 65%;
+  letter-spacing: 1px;
+}
+
+.fa-sort-amount-down:hover {
+  color: rgb(150, 150, 150);
 }
 
 /* 
