@@ -11,7 +11,7 @@ $(".host-element").frameCarousel();
 $(".skillbar").each(function() {
   $(this)
     .find(".skillbar-bar")
-    .css("width", "20.20%");
+    .css("width", "26");
 });
 
 $("#clientSide").click(function() {
@@ -22,7 +22,7 @@ $("#clientSide").click(function() {
         {
           width: $(this).attr("data-percent")
         },
-        3000
+        2000
       );
   });
 });
@@ -30,7 +30,7 @@ $("#clientSide").click(function() {
 $(".skillbar2").each(function() {
   $(this)
     .find(".skillbar-bar")
-    .css("width", "20.20%");
+    .css("width", "26");
 });
 
 $("#serverSide").click(function() {
@@ -41,7 +41,7 @@ $("#serverSide").click(function() {
         {
           width: $(this).attr("data-percent")
         },
-        3000
+        2000
       );
   });
 });

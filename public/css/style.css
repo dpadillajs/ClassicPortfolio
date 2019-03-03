@@ -397,6 +397,7 @@ nav {
 
 .fa-sort-amount-down:hover {
   color: rgb(150, 150, 150);
+  cursor: pointer;
 }
 
 /* 
