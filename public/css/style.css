@@ -220,9 +220,39 @@ nav {
   }
 }
 
+@media (max-width: 563px) {
+  #projectsTitle {
+    text-align: center !important;
+    padding-right: 0px !important;
+  }
+}
+
 @media (max-width: 484px) {
   #skillsTitle {
     font-size: 26px !important;
+  }
+}
+
+@media (max-width: 481px) {
+  #projectsTitle {
+    font-size: 25px !important;
+    text-align: center !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .host-element {
+    width: 370px !important;
+    height: 334px !important;
+  }
+  #projectWorksTitle {
+    text-align: center !important;
+    padding-right: 0 !important;
+    margin-bottom: 38px;
+  }
+  .fc-image-mask {
+    border: solid rgb(55, 55, 55) 10px;
   }
 }
 
@@ -260,136 +290,11 @@ nav {
   border-bottom: dotted 4px white;
 }
 
-/* Skill list items */
-
-.skill-list-item {
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-weight: lighter;
-  padding: 0;
-  color: rgb(55, 55, 55);
-}
-
 #skillList {
   padding-left: 0;
   color: #2d2d2d;
   text-align: left;
   list-style-type: none;
-}
-
-/* Containers for skill levels */
-
-.box {
-  height: 1.2em;
-  width: 100%;
-  border: 0.1em solid rgb(220, 52, 85);
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0.5em 0 2em;
-  text-align: center;
-}
-
-/* Skill levels */
-
-#one {
-  height: 1em;
-  width: 100%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#two {
-  height: 1em;
-  width: 80%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#three {
-  height: 1em;
-  width: 85%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#four {
-  height: 1em;
-  width: 85%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#five {
-  height: 1em;
-  width: 80%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#six {
-  height: 1em;
-  width: 0%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#seven {
-  height: 1em;
-  width: 70%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#eight {
-  height: 1em;
-  width: 65%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#nine {
-  height: 1em;
-  width: 55%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#ten {
-  height: 1em;
-  width: 65%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#eleven {
-  height: 1em;
-  width: 75%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-#twelve {
-  height: 1em;
-  width: 80%;
-  background: rgb(220, 52, 85);
-  display: block;
-}
-
-/* Large hover state for animation */
-
-#skills:hover #one,
-#skills:hover #two,
-#skills:hover #three,
-#skills:hover #four,
-#skills:hover #five,
-#skills:hover #six,
-#skills:hover #seven,
-#skills:hover #eight,
-#skills:hover #nine,
-#skills:hover #ten,
-#skills:hover #eleven,
-#skills:hover #twelve {
-  animation: grow 1.4s 0.3s cubic-bezier(0.39, 0.07, 0.16, 0.97);
 }
 
 #headingOne,
@@ -421,21 +326,74 @@ nav {
   font-weight: 900;
 }
 
-/* Keyframe */
-
-@keyframes grow {
-  0% {
-    width: 0;
-  }
-  100% {
-    transform: 100%;
-  }
+.skillbar,
+.skillbar2 {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 
-small {
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 117px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* small {
   font-size: 65%;
   letter-spacing: 1px;
-}
+} */
 
 .fa-sort-amount-down:hover {
   color: rgb(150, 150, 150);
@@ -498,19 +456,19 @@ small {
 }
 
 .parallax1 {
-  background-image: url("../img/CineGrub2.png");
+  background-image: url("../img/CineGrub.png");
   -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
 }
 
 .parallax2 {
-  background-image: url("../img/Schedulr2.png");
+  background-image: url("../img/Schedulr.png");
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
 }
 
 .parallax3 {
-  background-image: url("../img/ThronesRPG2.png");
+  background-image: url("../img/ThronesRPG.png");
   -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
 }
@@ -548,9 +506,16 @@ small {
   color: white;
   font-size: 25px;
   background: linear-gradient(to right, rgb(203, 45, 62), rgb(239, 71, 58));
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.475);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: solid 2px white;
   cursor: pointer;
+  transition: 1s;
+}
+
+.demoButton:hover,
+.demoButton2:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.475);
+  filter: brightness(1.1);
 }
 
 .demoButton2 {
@@ -566,9 +531,10 @@ small {
   color: white;
   font-size: 25px;
   background: linear-gradient(to right, rgb(203, 45, 62), rgb(239, 71, 58));
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.475);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: solid 2px white;
   cursor: pointer;
+  transition: 1s;
 }
 
 a:hover {
