@@ -4,11 +4,46 @@ $(document).ready(function() {
       .addClass("hide")
       .removeClass("show");
   });
+
+  var uniqueID = 1;
+
+  setTimeout(function() {
+    $(".fc-film > div").each(function() {
+      $(this).addClass("hi");
+      $(this).wrap(
+        "<a href='#' target='_blank' id='projectNo" + uniqueID + "'></a>"
+      );
+      uniqueID++;
+    });
+  }, 2000);
 });
 
-// $(".fc-film")
-//   .children()[0]
-//   .addClass("hello");
+$(window).on("beforeunload", function() {
+  $("body").hide();
+  $(window).scrollTop(0);
+});
+
+// Project URLS are ordered by their carousal appearance. //
+var projectURLs = [
+  "https://dpadillajs.github.io/CyberpunkHangman/",
+  "https://dpadillajs.github.io/DearTrivia/",
+  "https://dpadillajs.github.io/FlightTimes/",
+  "https://gamelogger-app.herokuapp.com/",
+  "https://dpadillajs.github.io/Giffeine/",
+  "https://pokematch-app.herokuapp.com/",
+  "https://cinegrub.com/",
+  "https://app-schedulr.herokuapp.com/",
+  "https://dpadillajs.github.io/GameOfThronesRPG/",
+  "https://davidpadilla.io/"
+];
+
+setTimeout(function() {
+  var projectID = 1;
+  $.each(projectURLs, function(i, url) {
+    $("#projectNo" + projectID).attr("href", url);
+    projectID++;
+  });
+}, 3000);
 
 $(".host-element").frameCarousel();
 
@@ -257,5 +292,30 @@ $(document).ready(function() {
   $("#textFormspree").val("");
 });
 
-// $("#formatEmailMargin").css("margin-bottom", "20px");
-// $("#formatEmailMargin").css("margin-bottom", "0");
+// Wrap every letter in a span
+$(".ml3").each(function() {
+  $(this).html(
+    $(this)
+      .text()
+      .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+  );
+});
+
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".ml3 .letter",
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: function(el, i) {
+      return 150 * (i + 1);
+    }
+  })
+  .add({
+    targets: ".ml3",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
