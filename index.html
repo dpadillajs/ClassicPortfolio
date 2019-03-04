@@ -521,7 +521,7 @@
       <div class="row">
         <div class="col-12 p-0">
           <div class="parallax parallax1">
-            <a href="https://cinegrub.com"
+            <a href="https://cinegrub.com" target="_blank"
               ><p class="demoButton">View Demo</p></a
             >
           </div>
@@ -538,7 +538,7 @@
           display: inline-flex;
           flex-direction: row-reverse;"
           >
-            <a href="https://app-schedulr.herokuapp.com/"
+            <a href="https://app-schedulr.herokuapp.com/" target="_blank"
               ><p class="demoButton2">View Demo</p></a
             >
           </div>
@@ -550,7 +550,9 @@
       <div class="row">
         <div class="col-12 p-0">
           <div class="parallax parallax3">
-            <a href="https://dpadillajs.github.io/GameOfThronesRPG/"
+            <a
+              href="https://dpadillajs.github.io/GameOfThronesRPG/"
+              target="_blank"
               ><p class="demoButton">View Demo</p></a
             >
           </div>
@@ -568,6 +570,81 @@
       <div class="row">
         <div class="col-12">
           <div class="host-element"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid form-bg pt-4">
+      <h5 id="contactTitle" class="mb-5 mt-4">
+        <span id="contactBorder">CONTACT <span id="contactSpan">ME</span></span>
+      </h5>
+
+      <div class="row">
+        <div class="col-md-12">
+          <form
+            method="POST"
+            action="https://formspree.io/davidpadilla.dev@gmail.com"
+            id="formspree"
+          >
+            <div
+              class="row"
+              id="formatEmailMargin"
+              style="margin-bottom: 20px;"
+            >
+              <div
+                class="col-sm-6"
+                style="
+          margin-bottom: -20px;
+          margin-top: 20px;
+      "
+              >
+                <input
+                  type="text"
+                  id="nameFormspree"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="col-sm-6 emailDiv" style="margin-top: 20px;">
+                <input
+                  type="email"
+                  id="emailFormspree"
+                  name="_replyto"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <input
+                  type="text"
+                  id="subjectFormspree"
+                  name="_subject"
+                  placeholder="Subject Line"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <textarea
+                  id="textFormspree"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button id="submitFormspree" type="submit" value="Send">
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
