@@ -361,12 +361,12 @@ setTimeout(function() {
       .hide()
       .fadeIn(1000);
   }
-}, 2100);
+}, 2500);
 
 setTimeout(function() {
   paginationInnerEvt();
   carouselArrowBtnEvt();
-}, 1000);
+}, 3000);
 
 function paginationInnerEvt() {
   $(".fc-pagination-inner > a").each(function() {
