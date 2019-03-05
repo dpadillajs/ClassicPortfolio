@@ -1,0 +1,70 @@
+@media (max-aspect-ratio: 1280/720) {
+  #videoTron {
+    height: 100vh;
+    width: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .github-link {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #headingOne,
+  #headingTwo {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 563px) {
+  #projectsTitle {
+    text-align: center !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 484px) {
+  #skillsTitle,
+  #aboutMeTitle,
+  #skillsTitle,
+  #projectsTitle,
+  #projectWorksTitle,
+  #contactTitle {
+    font-size: 26px !important;
+  }
+}
+
+@media (max-width: 481px) {
+  #projectsTitle {
+    font-size: 25px !important;
+    text-align: center !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  #projectWorksTitle {
+    text-align: center !important;
+    padding-right: 0 !important;
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 393px) {
+  #skillsTitle,
+  #aboutMeTitle,
+  #skillsTitle,
+  #projectsTitle,
+  #projectWorksTitle,
+  #contactTitle {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 344px) {
+  .skillCategories {
+    font-size: 21px !important;
+  }
+}

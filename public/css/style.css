@@ -234,62 +234,6 @@ nav {
   color: white;
 }
 
-@media (max-aspect-ratio: 1280/720) {
-  #videoTron {
-    height: 100vh;
-    width: auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .github-link {
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  #headingOne,
-  #headingTwo {
-    text-align: center !important;
-  }
-}
-
-@media (max-width: 563px) {
-  #projectsTitle {
-    text-align: center !important;
-    padding-right: 0px !important;
-  }
-}
-
-@media (max-width: 484px) {
-  #skillsTitle {
-    font-size: 26px !important;
-  }
-}
-
-@media (max-width: 481px) {
-  #projectsTitle {
-    font-size: 25px !important;
-    text-align: center !important;
-    padding-right: 0px !important;
-  }
-}
-
-@media (max-width: 450px) {
-  .host-element {
-    width: 370px !important;
-    height: 334px !important;
-  }
-  #projectWorksTitle {
-    text-align: center !important;
-    padding-right: 0 !important;
-    margin-bottom: 38px;
-  }
-  .fc-image-mask {
-    border: solid rgb(55, 55, 55) 10px;
-  }
-}
-
 .skills-bg {
   background: rgb(220, 52, 85);
 }
@@ -423,11 +367,6 @@ nav {
   color: #ffffff;
   color: rgba(0, 0, 0, 0.4);
 }
-
-/* small {
-  font-size: 65%;
-  letter-spacing: 1px;
-} */
 
 .fa-sort-amount-down:hover {
   color: rgb(150, 150, 150);
@@ -756,7 +695,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 15px;
+  font-size: 9px;
   font-style: normal;
 }
 
