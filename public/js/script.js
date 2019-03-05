@@ -319,3 +319,618 @@ anime
     easing: "easeOutExpo",
     delay: 1000
   });
+
+setTimeout(function() {
+  if (
+    $("#projectNo1")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Cyberpunk Hangman")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "A cyberpunk themed hangman game that takes in user input, keeps track of guesses, and notifies the user of their wins/losses."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+}, 2100);
+
+setTimeout(function() {
+  paginationInnerEvt();
+  carouselArrowBtnEvt();
+}, 1000);
+
+function paginationInnerEvt() {
+  $(".fc-pagination-inner > a").each(function() {
+    $(this).on("click", function() {
+      displaySkills();
+    });
+  });
+}
+
+function carouselArrowBtnEvt() {
+  $(".fc-btn").on("click", function() {
+    displaySkills();
+  });
+}
+
+function displaySkills() {
+  if (
+    $("#projectNo1")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Cyberpunk Hangman")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "A cyberpunk themed hangman game that takes in user input, keeps track of guesses, and notifies the user of their wins/losses."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo2")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Dear Trivia")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "A timed-trivia quiz about rom-com films that also keeps track of the user's right and wrong answers."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo3")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Flight Times")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "Flight Times is an administrative application that utilizes Google's Firebase to store arrival and departure times at RDU Airport."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech bootstrap")
+          .text("Bootstrap 4")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech firebase")
+          .text("Firebase")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo4")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Gamelogger")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "Gamelogger is a full stack application that users can use to add or delete videogames from their backlog and update once completed."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech bootstrap")
+          .text("Bootstrap 4")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech handlebars")
+          .text("Handlebars")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech node")
+          .text("Node.js")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech express")
+          .text("Express")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech mysql")
+          .text("MySQL")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech sequelize")
+          .text("Sequelize")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo5")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Giffeine")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "Giffeine is a coffee-themed gif central that displays API data pulled from Giphy.com based on the search input of the user."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo6")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("PokéMatch")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "PokéMatch is a compatibility-based application, sort of like those trivia websites that determine which movie character you are based on a series of questions. The application works off of answers given to the server by the user, which will then be compared to answers of pre-existing pokemon within a predefined api route. The application will then conclude by displaying the name and picture of the pokemon with the best overall match."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech bootstrap")
+          .text("Bootstrap 4")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech node")
+          .text("Node.js")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech express")
+          .text("Express")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo7")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("CineGrub")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "CineGrub was a collaborative project on a team of four with a deadline of two weeks to create a Minimum Viable Product. Upon registering an account with CineGrub, users were then able to search for movies and restaurants nearby using their zip code. Invitations can also be sent between CineGrub members for weekend plans!"
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech groupProject")
+          .text("Group Project")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech firebase")
+          .text("Firebase")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo8")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Schedulr")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "Schedulr is a full stack application that was collaboratively created on a team of four. It is a third party application that any client such as a dental clinic could use to schedule appointments with their patients and send friendly reminders to their cell via text."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech groupProject")
+          .text("Group Project")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech bootstrap")
+          .text("Bootstrap 4")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech handlebars")
+          .text("Handlebars")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech node")
+          .text("Node.js")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech express")
+          .text("Express")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech mysql")
+          .text("MySQL")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech sequelize")
+          .text("Sequelize")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo9")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("Game of Thrones RPG")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .text(
+        "Game of Thrones is an RPG card-based game where you can choose a character with unique ATK/HP points and fight for control of the Iron Throne by first defeating all your adversaries."
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+  if (
+    $("#projectNo10")
+      .children()
+      .hasClass("active")
+  ) {
+    $("#projectTitle").empty();
+    $("#projectTitle")
+      .text("www.davidpadilla.io")
+      .hide()
+      .fadeIn(1000);
+
+    $("#aboutProject").empty();
+    $("#aboutProject")
+      .html(
+        "My personal portfolio made from scratch with absolutely no templates! Bootstrap 4 components where used and customized for mobile responsiveness across all devices. <br><em>Optimized for devices as small as 320px in width.<em>"
+      )
+      .addClass("aboutProject")
+      .hide()
+      .fadeIn(1000);
+
+    $("#dumpSkills").empty();
+    $("#dumpSkills")
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech html")
+          .text("HTML5")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech css")
+          .text("CSS3")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech javascript")
+          .text("JavaScript")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech jquery")
+          .text("jQuery")
+      )
+      .append(
+        $("<span>")
+          .addClass("badge badge-primary tech bootstrap")
+          .text("Bootstrap 4")
+      )
+      .hide()
+      .fadeIn(1000);
+  }
+}
