@@ -11,6 +11,20 @@
   }
 }
 
+/* @media (max-width: 860px) {
+  .parallax1 {
+    background-image: url("../img/CineGrub_small.png");
+  }
+
+  .parallax2 {
+    background-image: url("../img/Schedulr_small.png");
+  }
+
+  .parallax3 {
+    background-image: url("../img/ThronesRPG_small.png");
+  }
+} */
+
 @media (max-width: 767px) {
   #headingOne,
   #headingTwo {
@@ -41,6 +55,18 @@
     font-size: 25px !important;
     text-align: center !important;
     padding-right: 0px !important;
+  }
+
+  .parallax1 {
+    background-image: url("../img/CineGrub_small.png");
+  }
+
+  .parallax2 {
+    background-image: url("../img/Schedulr_small.png");
+  }
+
+  .parallax3 {
+    background-image: url("../img/ThronesRPG_small.png");
   }
 }
 
