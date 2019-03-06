@@ -396,6 +396,8 @@ function refreshInfo(event) {
   displaySkills();
 }
 
+alert("Refresh is over");
+
 function displaySkills() {
   if ($("#projectNum1").hasClass("active")) {
     $("#projectTitle").empty();
