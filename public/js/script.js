@@ -366,7 +366,14 @@ setTimeout(function() {
 setTimeout(function() {
   paginationInnerEvt();
   carouselArrowBtnEvt();
+  carouselOnMobileEvt();
 }, 3000);
+
+setTimeout(function() {
+  paginationInnerEvt();
+  carouselArrowBtnEvt();
+  carouselOnMobileEvt();
+}, 10000);
 
 function paginationInnerEvt() {
   $(".fc-pagination-inner > a").each(function() {
@@ -378,6 +385,12 @@ function paginationInnerEvt() {
 
 function carouselArrowBtnEvt() {
   $(".fc-btn").on("click", function() {
+    displaySkills();
+  });
+}
+
+function carouselOnMobileEvt() {
+  $(".fc-image-mask").on("click", function() {
     displaySkills();
   });
 }
