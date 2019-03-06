@@ -5,14 +5,23 @@ $(document).ready(function() {
       .removeClass("show");
   });
 
-  var uniqueID = 1;
-
   setTimeout(function() {
+    var uniqueID = 1;
     $(".fc-film > div").each(function() {
       $(this).addClass("hi");
       $(this).wrap(
         "<a href='#' target='_blank' id='projectNo" + uniqueID + "'></a>"
       );
+      uniqueID++;
+    });
+
+    $(".fc-image-mask").attr("ontouchmove", "refreshInfo(event)");
+  }, 2000);
+
+  setTimeout(function() {
+    var uniqueID = 1;
+    $(".fc-pagination-inner > a").each(function() {
+      $(this).attr("id", "projectNum" + uniqueID);
       uniqueID++;
     });
   }, 2000);
@@ -321,11 +330,7 @@ anime
   });
 
 setTimeout(function() {
-  if (
-    $("#projectNo1")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum1").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Cyberpunk Hangman")
@@ -366,13 +371,11 @@ setTimeout(function() {
 setTimeout(function() {
   paginationInnerEvt();
   carouselArrowBtnEvt();
-  carouselOnMobileEvt();
 }, 3000);
 
 setTimeout(function() {
   paginationInnerEvt();
   carouselArrowBtnEvt();
-  carouselOnMobileEvt();
 }, 10000);
 
 function paginationInnerEvt() {
@@ -389,18 +392,16 @@ function carouselArrowBtnEvt() {
   });
 }
 
-function carouselOnMobileEvt() {
-  $(".fc-image-mask").on("click", function() {
-    displaySkills();
-  });
+// setInterval(function() {
+//   displaySkills();
+// }, 1000);
+
+function refreshInfo(event) {
+  alert("Hi!");
 }
 
 function displaySkills() {
-  if (
-    $("#projectNo1")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum1").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Cyberpunk Hangman")
@@ -436,11 +437,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo2")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum2").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Dear Trivia")
@@ -481,11 +478,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo3")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum3").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Flight Times")
@@ -536,11 +529,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo4")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum4").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Gamelogger")
@@ -611,11 +600,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo5")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum5").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Giffeine")
@@ -656,11 +641,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo6")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum6").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("PokéMatch")
@@ -716,11 +697,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo7")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum7").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("CineGrub")
@@ -771,11 +748,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo8")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum8").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Schedulr")
@@ -851,11 +824,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo9")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum9").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("Game of Thrones RPG")
@@ -896,11 +865,7 @@ function displaySkills() {
       .hide()
       .fadeIn(1000);
   }
-  if (
-    $("#projectNo10")
-      .children()
-      .hasClass("active")
-  ) {
+  if ($("#projectNum10").hasClass("active")) {
     $("#projectTitle").empty();
     $("#projectTitle")
       .text("www.davidpadilla.io")
