@@ -15,7 +15,7 @@ $(document).ready(function() {
       uniqueID++;
     });
 
-    $(".fc-image-mask").attr("ontouchmove", "refreshInfo(event)");
+    $(".fc-image-mask").attr("ontouchend", "refreshInfo(event)");
   }, 2000);
 
   setTimeout(function() {
@@ -393,7 +393,9 @@ function carouselArrowBtnEvt() {
 }
 
 function refreshInfo(event) {
-  displaySkills();
+  setTimeout(function() {
+    displaySkills();
+  }, 1000);
 }
 
 function displaySkills() {
