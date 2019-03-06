@@ -392,12 +392,8 @@ function carouselArrowBtnEvt() {
   });
 }
 
-// setInterval(function() {
-//   displaySkills();
-// }, 1000);
-
 function refreshInfo(event) {
-  alert("Hi!");
+  displaySkills();
 }
 
 function displaySkills() {
