@@ -920,6 +920,7 @@ a:hover {
   padding: 0 10px;
   background: rgb(220, 52, 85);
   border-radius: 10px;
+  min-height: 42px;
 }
 
 .aboutProject {
@@ -930,4 +931,5 @@ a:hover {
   border-radius: 10px;
   margin-bottom: 30px;
   margin-top: 10px;
+  min-height: 74px;
 }

@@ -65,9 +65,9 @@
     margin-bottom: 38px;
   }
 
-  /* .hide-parallex {
+  .hide-parallex {
     display: none;
-  } */
+  }
 }
 
 @media (max-width: 393px) {
