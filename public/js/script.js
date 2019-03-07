@@ -1,30 +1,49 @@
 $(document).ready(function() {
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    $(".hide-parallex").css("display", "none");
+  }
+
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse")
       .addClass("hide")
       .removeClass("show");
   });
 
-  setTimeout(function() {
-    var uniqueID = 1;
-    $(".fc-film > div").each(function() {
-      $(this).addClass("hi");
-      $(this).wrap(
-        "<a href='#' target='_blank' id='projectNo" + uniqueID + "'></a>"
-      );
-      uniqueID++;
-    });
+  function assignProperties() {
+    setTimeout(function() {
+      var uniqueID = 1;
+      $(".fc-film > div").each(function() {
+        $(this).wrap(
+          "<a href='#' target='_blank' id='projectNo" + uniqueID + "'></a>"
+        );
+        uniqueID++;
+      });
 
-    $(".fc-image-mask").attr("ontouchend", "refreshInfo(event)");
-  }, 2000);
+      $(".fc-image-mask").attr("ontouchend", "refreshInfo(event)");
+      $(".fc-image-mask").attr("onmousedown", "refreshInfo(event)");
+    }, 2000);
 
+    setTimeout(function() {
+      var uniqueID = 1;
+      $(".fc-pagination-inner > a").each(function() {
+        $(this).attr("id", "projectNum" + uniqueID);
+        uniqueID++;
+      });
+    }, 2000);
+  }
+
+  assignProperties();
+
+  //Failsafe in case assignProperties() never runs
   setTimeout(function() {
-    var uniqueID = 1;
-    $(".fc-pagination-inner > a").each(function() {
-      $(this).attr("id", "projectNum" + uniqueID);
-      uniqueID++;
-    });
-  }, 2000);
+    if ($("#projectNo1").length === 0) {
+      assignProperties();
+    }
+  }, 10000);
 });
 
 $(window).on("beforeunload", function() {
@@ -62,7 +81,7 @@ $(".skillbar").each(function() {
     .css("width", "26");
 });
 
-$("#clientSide").click(function() {
+$("#clientSide > i").click(function() {
   $(".skillbar").each(function() {
     $(this)
       .find(".skillbar-bar")
@@ -81,7 +100,7 @@ $(".skillbar2").each(function() {
     .css("width", "26");
 });
 
-$("#serverSide").click(function() {
+$("#serverSide > i").click(function() {
   $(".skillbar2").each(function() {
     $(this)
       .find(".skillbar-bar")
@@ -374,9 +393,11 @@ setTimeout(function() {
 }, 3000);
 
 setTimeout(function() {
-  paginationInnerEvt();
-  carouselArrowBtnEvt();
-}, 10000);
+  if ($("#projectNo1").length === 0) {
+    paginationInnerEvt();
+    carouselArrowBtnEvt();
+  }
+}, 11000);
 
 function paginationInnerEvt() {
   $(".fc-pagination-inner > a").each(function() {
@@ -392,10 +413,14 @@ function carouselArrowBtnEvt() {
   });
 }
 
+$(".fc-image-mask").mouseover(function() {
+  setTimeout(displaySkills, 1000);
+});
+
 function refreshInfo(event) {
   setTimeout(function() {
     displaySkills();
-  }, 1000);
+  }, 500);
 }
 
 function displaySkills() {
@@ -910,3 +935,5 @@ function displaySkills() {
       .fadeIn(1000);
   }
 }
+
+AOS.init();

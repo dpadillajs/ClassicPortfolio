@@ -42,6 +42,8 @@
     <!-- External CSS Link -->
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
     <link rel="stylesheet" type="text/css" href="public/css/queries.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -174,7 +176,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm mb-2">
-          <div class="card aboutMeCards mt-4">
+          <div
+            class="card aboutMeCards mt-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
             <p class="card-img-top text-center" alt="Card image cap">
               <i class="aboutMeIcons far fa-eye "></i>
             </p>
@@ -191,7 +197,12 @@
           </div>
         </div>
         <div class="col-sm mb-2">
-          <div class="card aboutMeCards mt-4" id="highlightSkill">
+          <div
+            class="card aboutMeCards mt-4"
+            id="highlightSkill"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
             <p class="card-img-top text-center" alt="Card image cap">
               <i class="aboutMeIcons fab fa-stack-overflow highlightIcon"></i>
             </p>
@@ -210,7 +221,11 @@
           </div>
         </div>
         <div class="col-sm mb-2">
-          <div class="card aboutMeCards mt-4">
+          <div
+            class="card aboutMeCards mt-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
             <p class="card-img-top text-center" alt="Card image cap">
               <i class="aboutMeIcons fas fa-server"></i>
             </p>
@@ -718,6 +733,8 @@
       </p>
       <p id="signatureText">Handcrafted by me &copy; twentynineteen</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Bootstrap 4 Javascript CDN Links -->
     <script

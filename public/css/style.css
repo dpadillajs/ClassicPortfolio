@@ -202,7 +202,7 @@ nav {
 }
 .aboutMeCards {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transition: 1s;
+  transition: 1s !important;
   min-height: 298px;
 }
 
