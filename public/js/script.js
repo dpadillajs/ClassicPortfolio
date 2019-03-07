@@ -458,7 +458,7 @@ function displaySkills() {
     $("#aboutProjectDetails").text("");
     $("#aboutProjectDetails")
       .text(
-        "A timed-trivia quiz about rom-com films that also keeps track of the user's right and wrong answers."
+        "Dear Trivia is a rom-com trivia application in which users must choose an answer from each multiple choice question before the time runs out."
       )
       .fadeIn(1000);
 
