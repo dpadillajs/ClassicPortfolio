@@ -371,9 +371,9 @@ var projects = [
     project_skills: [
       "HTML5",
       "CSS3",
+      "Bootstrap 4",
       "JavaScript",
       "jQuery",
-      "Bootstrap 4",
       "Firebase"
     ]
   },
@@ -385,9 +385,9 @@ var projects = [
     project_skills: [
       "HTML5",
       "CSS3",
+      "Bootstrap 4",
       "JavaScript",
       "jQuery",
-      "Bootstrap 4",
       "Handlebars",
       "Node.js",
       "Express",
@@ -403,8 +403,8 @@ var projects = [
     project_skills: [
       "HTML5",
       "CSS3",
-      "JavaScript",
       "Bootstrap 4",
+      "JavaScript",
       "jQuery",
       "Handlebars",
       "Node.js",
@@ -421,9 +421,9 @@ var projects = [
     project_skills: [
       "HTML5",
       "CSS3",
+      "Bootstrap 4",
       "JavaScript",
       "jQuery",
-      "Bootstrap 4",
       "Node.js",
       "Express"
     ]
@@ -451,9 +451,9 @@ var projects = [
       "Group Project",
       "HTML5",
       "CSS3",
+      "Bootstrap 4",
       "JavaScript",
       "jQuery",
-      "Bootstrap 4",
       "Handlebars",
       "Node.js",
       "Express",
@@ -473,7 +473,7 @@ var projects = [
     project_title: "www.davidpadilla.io",
     project_description:
       "My personal portfolio made from scratch with absolutely no templates! Bootstrap 4 components where used and customized for mobile responsiveness across all devices.<br><em>Optimized for devices as small as 320px in width.<em>",
-    project_skills: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 4"]
+    project_skills: ["HTML5", "CSS3", "Bootstrap 4", "JavaScript", "jQuery"]
   }
 ];
 
