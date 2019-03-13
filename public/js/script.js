@@ -54,7 +54,7 @@ var projectURLs = [
   "https://dpadillajs.github.io/DearTrivia/",
   "https://dpadillajs.github.io/FlightTimes/",
   "https://gamelogger-app.herokuapp.com/",
-  "https://dpadillajs.github.io/Giffeine/",
+  "https://cashscraper.herokuapp.com/",
   "https://pokematch-app.herokuapp.com/",
   "https://cinegrub.com/",
   "https://app-schedulr.herokuapp.com/",
@@ -397,10 +397,21 @@ var projects = [
   },
   {
     project_number: 5,
-    project_title: "Giffeine",
+    project_title: "CashScraper",
     project_description:
-      "Giffeine is a coffee-themed gif central that displays API data pulled from Giphy.com based on the search input of the user.",
-    project_skills: ["HTML5", "CSS3", "JavaScript", "jQuery"]
+      "CashScraper is a basic full stack application that web scrapes finance-related articles from an external website using Cheerio, stores them into MongoDB, and then displays the information with the help of Mongoose to the user.",
+    project_skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap 4",
+      "jQuery",
+      "Handlebars",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose"
+    ]
   },
   {
     project_number: 6,
