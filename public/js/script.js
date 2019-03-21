@@ -50,15 +50,15 @@ $(window).on("beforeunload", function() {
 
 // Project URLS are ordered by their carousal appearance. //
 var projectURLs = [
-  "https://dpadillajs.github.io/CyberpunkHangman/",
-  "https://dpadillajs.github.io/DearTrivia/",
-  "https://dpadillajs.github.io/FlightTimes/",
+  "http://www.davidpadilla.io/CyberpunkHangman/",
+  "http://www.davidpadilla.io/Villianous/",
+  "http://www.davidpadilla.io/FlightTimes/",
   "https://gamelogger-app.herokuapp.com/",
   "https://cashscraper.herokuapp.com/",
   "https://pokematch-app.herokuapp.com/",
   "https://cinegrub.com/",
   "https://app-schedulr.herokuapp.com/",
-  "https://dpadillajs.github.io/GameOfThronesRPG/",
+  "http://www.davidpadilla.io/GameOfThronesRPG/",
   "https://davidpadilla.io/"
 ];
 
@@ -358,10 +358,10 @@ var projects = [
   },
   {
     project_number: 2,
-    project_title: "Dear Trivia",
+    project_title: "Villianous",
     project_description:
-      "Dear Trivia is a rom-com trivia application in which users must choose an answer from each multiple choice question before the time runs out.",
-    project_skills: ["HTML5", "CSS3", "JavaScript", "jQuery"]
+      "Villianous is a front-end application where users must not press the same picture more than once or risk restarting their score back to zero. Memory is the name of the game because every picture will be rearranged into a different order for each point gained.",
+    project_skills: ["HTML5", "CSS3", "Material-UI", "JavaScript", "React"]
   },
   {
     project_number: 3,
