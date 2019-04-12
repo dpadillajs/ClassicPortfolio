@@ -416,7 +416,7 @@ nav {
 }
 
 .parallax3 {
-  background-image: url("../img/ThronesRPG.png");
+  background-image: url("../img/Recipedia.png");
   -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
 }
@@ -623,6 +623,10 @@ a:hover {
 
 .fc-image-masked:hover {
   filter: brightness(0.8);
+}
+
+.fc-controls {
+  z-index: 2 !important;
 }
 
 .contact-icons {

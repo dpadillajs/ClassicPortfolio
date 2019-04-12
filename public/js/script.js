@@ -52,7 +52,7 @@ $(window).on("beforeunload", function() {
 var projectURLs = [
   "http://www.davidpadilla.io/CyberpunkHangman/",
   "http://www.davidpadilla.io/Villianous/",
-  "http://www.davidpadilla.io/FlightTimes/",
+  "https://recipedia-davidpadilla.herokuapp.com/",
   "https://gamelogger-app.herokuapp.com/",
   "https://cashscraper.herokuapp.com/",
   "https://pokematch-app.herokuapp.com/",
@@ -365,16 +365,21 @@ var projects = [
   },
   {
     project_number: 3,
-    project_title: "Flight Times",
+    project_title: "Recipedia",
     project_description:
-      "Flight Times is an administrative application that utilizes Google's Firebase to store arrival and departure times at RDU Airport.",
+      "Recipedia is a MERN-stack collaboration project that aims to make the process of finding recipes, planning meals, and grocery shopping lists easier.<br><br>A user signs up, searches for their favorite recipe, assigns it for dinner on Wednesday, and then sends themselves an automated list of the recipe's ingredients to their phone or email.<br><strong><em>It's that easy!</em></strong>",
     project_skills: [
+      "Group Project",
       "HTML5",
       "CSS3",
-      "Bootstrap 4",
+      "Material-UI",
       "JavaScript",
-      "jQuery",
-      "Firebase"
+      "React",
+      "Firebase",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose"
     ]
   },
   {
