@@ -553,6 +553,12 @@ function carouselArrowBtnEvt() {
   });
 }
 
+// Assigns Click Handler Events to Carousel Arrows & Circle Tabs
+setTimeout(function() {
+  paginationInnerEvt();
+  carouselArrowBtnEvt();
+}, 3000);
+
 // Failsafe function if the above function's elements do not exist yet
 setTimeout(function() {
   if ($("#projectNo1").length === 0) {
