@@ -68,6 +68,10 @@ setTimeout(function() {
     $("#projectNo" + projectID).attr("href", url);
     projectID++;
   });
+
+  displaySkills();
+  paginationInnerEvt();
+  carouselArrowBtnEvt();
 }, 3000);
 
 $(".host-element").frameCarousel();
@@ -548,12 +552,6 @@ function carouselArrowBtnEvt() {
     displaySkills();
   });
 }
-
-// Assigns Click Handler Events to Carousel Arrows & Circle Tabs
-setTimeout(function() {
-  paginationInnerEvt();
-  carouselArrowBtnEvt();
-}, 3000);
 
 // Failsafe function if the above function's elements do not exist yet
 setTimeout(function() {
