@@ -621,6 +621,10 @@ a:hover {
   font-size: 12px;
 }
 
+.fc-image-masked {
+  height: 104% !important;
+}
+
 .fc-image-masked:hover {
   filter: brightness(0.8);
 }
