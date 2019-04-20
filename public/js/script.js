@@ -48,27 +48,7 @@ $(window).on("beforeunload", function() {
   $(window).scrollTop(0);
 });
 
-// Project URLS are ordered by their carousal appearance. //
-var projectURLs = [
-  "http://www.davidpadilla.io/CyberpunkHangman/",
-  "http://www.davidpadilla.io/Villianous/",
-  "https://recipedia-davidpadilla.herokuapp.com/",
-  "https://gamelogger-app.herokuapp.com/",
-  "https://cashscraper.herokuapp.com/",
-  "https://pokematch-app.herokuapp.com/",
-  "https://cinegrub.com/",
-  "https://app-schedulr.herokuapp.com/",
-  "http://www.davidpadilla.io/GameOfThronesRPG/",
-  "https://davidpadilla.io/"
-];
-
 setTimeout(function() {
-  var projectID = 1;
-  $.each(projectURLs, function(i, url) {
-    $("#projectNo" + projectID).attr("href", url);
-    projectID++;
-  });
-
   displaySkills();
   paginationInnerEvt();
   carouselArrowBtnEvt();
@@ -358,14 +338,18 @@ var projects = [
     project_title: "Cyberpunk Hangman",
     project_description:
       "A cyberpunk themed hangman game that takes in user input, keeps track of guesses, and notifies the user of their wins/losses.",
-    project_skills: ["HTML5", "CSS3", "JavaScript"]
+    project_skills: ["HTML5", "CSS3", "JavaScript"],
+    project_website: "http://www.davidpadilla.io/CyberpunkHangman/",
+    project_github: "https://github.com/dpadillajs/CyberpunkHangman"
   },
   {
     project_number: 2,
     project_title: "Villianous",
     project_description:
       "Villianous is a front-end application where users must not press the same picture more than once or risk restarting their score back to zero. Memory is the name of the game because every picture will be rearranged into a different order for each point gained.",
-    project_skills: ["HTML5", "CSS3", "Material-UI", "JavaScript", "React"]
+    project_skills: ["HTML5", "CSS3", "Material-UI", "JavaScript", "React"],
+    project_website: "http://www.davidpadilla.io/Villianous/",
+    project_github: "https://github.com/dpadillajs/Villianous"
   },
   {
     project_number: 3,
@@ -384,7 +368,9 @@ var projects = [
       "Express",
       "MongoDB",
       "Mongoose"
-    ]
+    ],
+    project_website: "https://recipedia-davidpadilla.herokuapp.com/",
+    project_github: "https://github.com/dpadillajs/Recipedia"
   },
   {
     project_number: 4,
@@ -402,7 +388,9 @@ var projects = [
       "Express",
       "MySQL",
       "Sequelize"
-    ]
+    ],
+    project_website: "https://gamelogger-app.herokuapp.com/",
+    project_github: "https://github.com/dpadillajs/Gamelogger-v2"
   },
   {
     project_number: 5,
@@ -420,7 +408,9 @@ var projects = [
       "Express",
       "MongoDB",
       "Mongoose"
-    ]
+    ],
+    project_website: "https://cashscraper.herokuapp.com/",
+    project_github: "https://github.com/dpadillajs/CashScraper"
   },
   {
     project_number: 6,
@@ -435,7 +425,9 @@ var projects = [
       "jQuery",
       "Node.js",
       "Express"
-    ]
+    ],
+    project_website: "https://pokematch-app.herokuapp.com/",
+    project_github: "https://github.com/dpadillajs/PokeMatch"
   },
   {
     project_number: 7,
@@ -449,7 +441,9 @@ var projects = [
       "JavaScript",
       "jQuery",
       "Firebase"
-    ]
+    ],
+    project_website: "https://cinegrub.com/",
+    project_github: "https://github.com/dpadillajs/CineGrub"
   },
   {
     project_number: 8,
@@ -468,21 +462,27 @@ var projects = [
       "Express",
       "MySQL",
       "Sequelize"
-    ]
+    ],
+    project_website: "https://app-schedulr.herokuapp.com/",
+    project_github: "https://github.com/dpadillajs/Schedulr"
   },
   {
     project_number: 9,
     project_title: "Game of Thrones RPG",
     project_description:
       "Game of Thrones is an RPG card-based game where you can choose a character with unique ATK/HP points and fight for control of the Iron Throne by first defeating all your adversaries.",
-    project_skills: ["HTML5", "CSS3", "JavaScript", "jQuery"]
+    project_skills: ["HTML5", "CSS3", "JavaScript", "jQuery"],
+    project_website: "http://www.davidpadilla.io/GameOfThronesRPG/",
+    project_github: "https://github.com/dpadillajs/GameOfThronesRPG"
   },
   {
     project_number: 10,
     project_title: "www.davidpadilla.io",
     project_description:
       "My personal portfolio made from scratch with absolutely no templates! Bootstrap 4 components where used and customized for mobile responsiveness across all devices.<br><em>Optimized for devices as small as 320px in width.<em>",
-    project_skills: ["HTML5", "CSS3", "Bootstrap 4", "JavaScript", "jQuery"]
+    project_skills: ["HTML5", "CSS3", "Bootstrap 4", "JavaScript", "jQuery"],
+    project_website: "https://davidpadilla.io/",
+    project_github: "https://github.com/dpadillajs/dpadillajs.github.io"
   }
 ];
 
@@ -507,6 +507,9 @@ function renderSkillTags(skillArray) {
 function renderCarouselInfo(projectObj, cb) {
   for (var j = 0; j < projectObj.length; j++) {
     if ($("#projectNum" + projectObj[j].project_number).hasClass("active")) {
+      $(".projectWebsite").attr("href", projectObj[j].project_website);
+      $(".githubWebsite").attr("href", projectObj[j].project_github);
+
       $("#projectTitleDetails")
         .text("")
         .text(projectObj[j].project_title)
