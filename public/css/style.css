@@ -492,6 +492,12 @@ nav {
   box-shadow: none !important;
 }
 
+.swal2-image {
+  border-top: solid rgb(220, 52, 85) 5px !important;
+  border-left: solid rgb(220, 52, 85) 5px !important;
+  border-right: solid rgb(220, 52, 85) 5px !important;
+}
+
 #projectsTitle,
 #projectWorksTitle {
   font-size: 35px;
