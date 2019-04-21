@@ -17,9 +17,7 @@ $(document).ready(function() {
     setTimeout(function() {
       var uniqueID = 1;
       $(".fc-film > div").each(function() {
-        $(this).wrap(
-          "<a href='#' target='_blank' id='projectNo" + uniqueID + "'></a>"
-        );
+        $(this).wrap("<a id='projectNo" + uniqueID + "'></a>");
         uniqueID++;
       });
     }, 2000);
@@ -340,7 +338,8 @@ var projects = [
       "A cyberpunk themed hangman game that takes in user input, keeps track of guesses, and notifies the user of their wins/losses.",
     project_skills: ["HTML5", "CSS3", "JavaScript"],
     project_website: "http://www.davidpadilla.io/CyberpunkHangman/",
-    project_github: "https://github.com/dpadillajs/CyberpunkHangman"
+    project_github: "https://github.com/dpadillajs/CyberpunkHangman",
+    project_readme: "./public/img/readme/hangman_readme.png"
   },
   {
     project_number: 2,
@@ -349,7 +348,8 @@ var projects = [
       "Villianous is a front-end application where users must not press the same picture more than once or risk restarting their score back to zero. Memory is the name of the game because every picture will be rearranged into a different order for each point gained.",
     project_skills: ["HTML5", "CSS3", "Material-UI", "JavaScript", "React"],
     project_website: "http://www.davidpadilla.io/Villianous/",
-    project_github: "https://github.com/dpadillajs/Villianous"
+    project_github: "https://github.com/dpadillajs/Villianous",
+    project_readme: "./public/img/readme/villainous_readme.png"
   },
   {
     project_number: 3,
@@ -370,7 +370,8 @@ var projects = [
       "Mongoose"
     ],
     project_website: "https://recipedia-davidpadilla.herokuapp.com/",
-    project_github: "https://github.com/dpadillajs/Recipedia"
+    project_github: "https://github.com/dpadillajs/Recipedia",
+    project_readme: "./public/img/readme/recipedia_readme.png"
   },
   {
     project_number: 4,
@@ -390,7 +391,8 @@ var projects = [
       "Sequelize"
     ],
     project_website: "https://gamelogger-app.herokuapp.com/",
-    project_github: "https://github.com/dpadillajs/Gamelogger-v2"
+    project_github: "https://github.com/dpadillajs/Gamelogger-v2",
+    project_readme: "./public/img/readme/gamelogger_readme.png"
   },
   {
     project_number: 5,
@@ -410,7 +412,8 @@ var projects = [
       "Mongoose"
     ],
     project_website: "https://cashscraper.herokuapp.com/",
-    project_github: "https://github.com/dpadillajs/CashScraper"
+    project_github: "https://github.com/dpadillajs/CashScraper",
+    project_readme: "./public/img/readme/cashscraper_readme.png"
   },
   {
     project_number: 6,
@@ -427,7 +430,8 @@ var projects = [
       "Express"
     ],
     project_website: "https://pokematch-app.herokuapp.com/",
-    project_github: "https://github.com/dpadillajs/PokeMatch"
+    project_github: "https://github.com/dpadillajs/PokeMatch",
+    project_readme: "./public/img/readme/pokematch_readme.png"
   },
   {
     project_number: 7,
@@ -443,7 +447,8 @@ var projects = [
       "Firebase"
     ],
     project_website: "https://cinegrub.com/",
-    project_github: "https://github.com/dpadillajs/CineGrub"
+    project_github: "https://github.com/dpadillajs/CineGrub",
+    project_readme: "./public/img/readme/cinegrub_readme.png"
   },
   {
     project_number: 8,
@@ -464,7 +469,8 @@ var projects = [
       "Sequelize"
     ],
     project_website: "https://app-schedulr.herokuapp.com/",
-    project_github: "https://github.com/dpadillajs/Schedulr"
+    project_github: "https://github.com/dpadillajs/Schedulr",
+    project_readme: "./public/img/readme/schedulr_readme.png"
   },
   {
     project_number: 9,
@@ -473,7 +479,8 @@ var projects = [
       "Game of Thrones is an RPG card-based game where you can choose a character with unique ATK/HP points and fight for control of the Iron Throne by first defeating all your adversaries.",
     project_skills: ["HTML5", "CSS3", "JavaScript", "jQuery"],
     project_website: "http://www.davidpadilla.io/GameOfThronesRPG/",
-    project_github: "https://github.com/dpadillajs/GameOfThronesRPG"
+    project_github: "https://github.com/dpadillajs/GameOfThronesRPG",
+    project_readme: "./public/img/readme/thrones_readme.png"
   },
   {
     project_number: 10,
@@ -482,7 +489,8 @@ var projects = [
       "My personal portfolio made from scratch with absolutely no templates! Bootstrap 4 components where used and customized for mobile responsiveness across all devices.<br><em>Optimized for devices as small as 320px in width.<em>",
     project_skills: ["HTML5", "CSS3", "Bootstrap 4", "JavaScript", "jQuery"],
     project_website: "https://davidpadilla.io/",
-    project_github: "https://github.com/dpadillajs/dpadillajs.github.io"
+    project_github: "https://github.com/dpadillajs/dpadillajs.github.io",
+    project_readme: "./public/img/readme/portfolio_readme.png"
   }
 ];
 
@@ -509,6 +517,17 @@ function renderCarouselInfo(projectObj, cb) {
     if ($("#projectNum" + projectObj[j].project_number).hasClass("active")) {
       $(".projectWebsite").attr("href", projectObj[j].project_website);
       $(".githubWebsite").attr("href", projectObj[j].project_github);
+
+      function renderReadme(projectReadme, projectName) {
+        $(".readmeDoc").on("click", function() {
+          Swal.fire({
+            imageUrl: projectReadme,
+            imageAlt: "README.md for " + projectName
+          });
+        });
+      }
+
+      renderReadme(projectObj[j].project_readme, projectObj[j].project_title);
 
       $("#projectTitleDetails")
         .text("")

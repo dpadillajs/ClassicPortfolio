@@ -440,18 +440,56 @@ nav {
   border: solid 2px rgb(220, 52, 85);
 }
 
+.projectWebsite,
+.githubWebsite,
+.readmeDoc {
+  width: 48px;
+  height: 48px;
+}
+
 .projectLinkIcons:hover {
   background: rgb(220, 52, 85);
   color: white;
   border: none;
 }
 
-.linkIcon1 {
+.projectWebsite {
   margin-right: 10px;
 }
 
-.linkIcon2 {
+.githubWebsite {
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+.readmeDoc {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.swal2-popup {
+  padding: 0 !important;
+}
+
+.swal2-image {
+  margin: 0 !important;
+}
+
+.swal2-actions {
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  /* border-top: solid rgb(220, 52, 85) 2px !important; */
+  background: rgb(220, 52, 85) !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: white !important;
+  color: rgb(220, 52, 85) !important;
+}
+
+.swal2-styled:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 #projectsTitle,
