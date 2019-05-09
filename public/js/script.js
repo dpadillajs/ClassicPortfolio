@@ -484,7 +484,7 @@ var projects = [
   },
   {
     project_number: 10,
-    project_title: "www.davidpadilla.io",
+    project_title: "Personal Portfolio",
     project_description:
       "My personal portfolio made from scratch with absolutely no templates! Bootstrap 4 components where used and customized for mobile responsiveness across all devices.<br><em>Optimized for devices as small as 320px in width.<em>",
     project_skills: ["HTML5", "CSS3", "Bootstrap 4", "JavaScript", "jQuery"],
