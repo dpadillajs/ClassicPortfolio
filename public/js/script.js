@@ -101,7 +101,7 @@ $("#nameFormspree").keyup(function() {
   ) {
     $("#nameFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#nameFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#nameFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -120,7 +120,7 @@ $("#emailFormspree").keyup(function() {
     $("#emailLabel").remove();
     $("#formatEmailMargin").css("margin-bottom", "20px");
   } else {
-    $("#emailFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#emailFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -132,7 +132,7 @@ $("#subjectFormspree").keyup(function() {
   ) {
     $("#subjectFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#subjectFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#subjectFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -144,7 +144,7 @@ $("#textFormspree").keyup(function() {
   ) {
     $("#textFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#textFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#textFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -156,7 +156,7 @@ $("#nameFormspree").keydown(function() {
   ) {
     $("#nameFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#nameFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#nameFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -175,7 +175,7 @@ $("#emailFormspree").keydown(function() {
     $("#emailLabel").remove();
     $("#formatEmailMargin").css("margin-bottom", "20px");
   } else {
-    $("#emailFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#emailFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -187,7 +187,7 @@ $("#subjectFormspree").keydown(function() {
   ) {
     $("#subjectFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#subjectFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#subjectFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -199,7 +199,7 @@ $("#textFormspree").keydown(function() {
   ) {
     $("#textFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#textFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#textFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -211,7 +211,7 @@ $("#nameFormspree").keypress(function() {
   ) {
     $("#nameFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#nameFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#nameFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -230,7 +230,7 @@ $("#emailFormspree").keypress(function() {
     $("#emailLabel").remove();
     $("#formatEmailMargin").css("margin-bottom", "20px");
   } else {
-    $("#emailFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#emailFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -242,7 +242,7 @@ $("#subjectFormspree").keypress(function() {
   ) {
     $("#subjectFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#subjectFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#subjectFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -254,7 +254,7 @@ $("#textFormspree").keypress(function() {
   ) {
     $("#textFormspree").css("border-bottom", "solid lightgreen 2px");
   } else {
-    $("#textFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#textFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
   }
 });
 
@@ -273,13 +273,13 @@ $("#submitFormspree").on("click", function() {
     $("#formatEmailMargin").css("margin-bottom", "20px");
   } else {
     $("#emailFormspree").val("");
-    $("#emailFormspree").css("border-bottom", "solid rgb(4, 180, 255) 2px");
+    $("#emailFormspree").css("border-bottom", "solid rgb(4, 110, 155) 2px");
     $("#emailLabel").remove();
     $(".emailDiv").append(
       $("<label>")
         .css({
           "margin-bottom": "8px",
-          color: "rgb(4, 180, 255)",
+          color: "rgb(4, 110, 155)",
           "font-size": "12px"
         })
         .attr({
