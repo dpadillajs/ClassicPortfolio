@@ -347,8 +347,8 @@ var projects = [
     project_description:
       "Villianous is a front-end application where users must not press the same picture more than once or risk restarting their score back to zero. Memory is the name of the game because every picture will be rearranged into a different order for each point gained.",
     project_skills: ["HTML5", "CSS3", "Material-UI", "JavaScript", "React"],
-    project_website: "http://www.davidpadilla.io/Villianous/",
-    project_github: "https://github.com/dpadillajs/Villianous",
+    project_website: "https://www.davidpadilla.io/Villainous/",
+    project_github: "https://github.com/dpadillajs/Villainous",
     project_readme: "./public/img/readme/villainous_readme.png"
   },
   {
